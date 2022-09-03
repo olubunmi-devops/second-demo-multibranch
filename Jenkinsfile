@@ -7,9 +7,6 @@ pipeline {
             }
         }
         stage('Main Branch Deploy Code') {
-            when {
-                branch 'main'
-            }
             steps {
                 sh 'echo "Building Artifact from Main branch"'
  
